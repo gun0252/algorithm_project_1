@@ -1,0 +1,26 @@
+
+[bubble Sort Performance Test]
+
+[Sorted Input]
+n = 1000
+  Average: 0.0001539s
+    Time/n     = 1.539e-07
+    Time/n^2   = 1.539e-10
+    Time/nlogn = 1.54428e-08
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0144751s
+    Time/n     = 1.44751e-06
+    Time/n^2   = 1.44751e-10
+    Time/nlogn = 1.08936e-07
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 1.23334s
+    Time/n     = 1.23334e-05
+    Time/n^2   = 1.23334e-10
+    Time/nlogn = 7.42544e-07
+    Sorted Correctly? Yes
+
+n = 1000000

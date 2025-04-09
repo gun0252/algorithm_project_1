@@ -1,0 +1,152 @@
+
+[tournament Sort Performance Test]
+
+[Sorted Input]
+n = 10
+  Average: 6.2e-06s
+    Time/n     = 6.2e-07
+    Time/n^2   = 6.2e-08
+    Time/nlogn = 1.86639e-07
+    Sorted Correctly? Yes
+
+n = 100
+  Average: 1.1e-05s
+    Time/n     = 1.1e-07
+    Time/n^2   = 1.1e-09
+    Time/nlogn = 1.65566e-08
+    Sorted Correctly? Yes
+
+n = 1000
+  Average: 0.0003455s
+    Time/n     = 3.455e-07
+    Time/n^2   = 3.455e-10
+    Time/nlogn = 3.46686e-08
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0257899s
+    Time/n     = 2.57899e-06
+    Time/n^2   = 2.57899e-10
+    Time/nlogn = 1.94088e-07
+    Sorted Correctly? Yes
+
+[Reversed Input]
+n = 10
+  Average: 7.2e-06s
+    Time/n     = 7.2e-07
+    Time/n^2   = 7.2e-08
+    Time/nlogn = 2.16742e-07
+    Sorted Correctly? Yes
+
+n = 100
+  Average: 2.96e-05s
+    Time/n     = 2.96e-07
+    Time/n^2   = 2.96e-09
+    Time/nlogn = 4.45524e-08
+    Sorted Correctly? Yes
+
+n = 1000
+  Average: 0.0003208s
+    Time/n     = 3.208e-07
+    Time/n^2   = 3.208e-10
+    Time/nlogn = 3.21901e-08
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0252853s
+    Time/n     = 2.52853e-06
+    Time/n^2   = 2.52853e-10
+    Time/nlogn = 1.90291e-07
+    Sorted Correctly? Yes
+
+[Random Input]
+n = 10
+  Average: 2.1e-06s
+    Time/n     = 2.1e-07
+    Time/n^2   = 2.1e-08
+    Time/nlogn = 6.32163e-08
+    Sorted Correctly? Yes
+    Stable? Yes
+
+n = 100
+  Average: 2.96e-05s
+    Time/n     = 2.96e-07
+    Time/n^2   = 2.96e-09
+    Time/nlogn = 4.45524e-08
+    Sorted Correctly? Yes
+    Stable? Yes
+
+n = 1000
+  Average: 0.0004098s
+    Time/n     = 4.098e-07
+    Time/n^2   = 4.098e-10
+    Time/nlogn = 4.11207e-08
+    Sorted Correctly? Yes
+    Stable? Yes
+
+n = 10000
+  Average: 0.026856s
+    Time/n     = 2.6856e-06
+    Time/n^2   = 2.6856e-10
+    Time/nlogn = 2.02112e-07
+    Sorted Correctly? Yes
+    Stable? Yes
+
+[Duplicate-heavy Input]
+n = 10
+  Average: 3.6e-06s
+    Time/n     = 3.6e-07
+    Time/n^2   = 3.6e-08
+    Time/nlogn = 1.08371e-07
+    Sorted Correctly? Yes
+
+n = 100
+  Average: 3.56e-05s
+    Time/n     = 3.56e-07
+    Time/n^2   = 3.56e-09
+    Time/nlogn = 5.35833e-08
+    Sorted Correctly? Yes
+
+n = 1000
+  Average: 0.0003838s
+    Time/n     = 3.838e-07
+    Time/n^2   = 3.838e-10
+    Time/nlogn = 3.85118e-08
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0263843s
+    Time/n     = 2.63843e-06
+    Time/n^2   = 2.63843e-10
+    Time/nlogn = 1.98562e-07
+    Sorted Correctly? Yes
+
+[Nearly Sorted Input]
+n = 10
+  Average: 4e-06s
+    Time/n     = 4e-07
+    Time/n^2   = 4e-08
+    Time/nlogn = 1.20412e-07
+    Sorted Correctly? Yes
+
+n = 100
+  Average: 3.66e-05s
+    Time/n     = 3.66e-07
+    Time/n^2   = 3.66e-09
+    Time/nlogn = 5.50885e-08
+    Sorted Correctly? Yes
+
+n = 1000
+  Average: 0.0003771s
+    Time/n     = 3.771e-07
+    Time/n^2   = 3.771e-10
+    Time/nlogn = 3.78395e-08
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0246099s
+    Time/n     = 2.46099e-06
+    Time/n^2   = 2.46099e-10
+    Time/nlogn = 1.85208e-07
+    Sorted Correctly? Yes
+
