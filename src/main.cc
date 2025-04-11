@@ -66,7 +66,7 @@ double measure_time(const vector<pair<int,int>>& data, int trials,
 // ===============
 void result(void(*sorting_func)(vector<pair<int,int>>&), const string& func_name){
     vector<int> sizes = {1000,10000,100000,1000000};
-    int num_trials = 1;
+    int num_trials = 10;
 
     string filename = func_name;
     replace(filename.begin(), filename.end(), ' ', '_');
@@ -149,19 +149,8 @@ void result(void(*sorting_func)(vector<pair<int,int>>&), const string& func_name
             auto data = generator(n);
             double avg_time = measure_time(data, num_trials, sorting_func);
 
-            double per_n     = avg_time / n;
-            double per_n2    = avg_time / (n * (double)n);
-            double per_nlogn = avg_time / (n * log2(n));
-
             cout << "  Average: " << avg_time << "s\n";
-            cout << "    Time/n     = " << per_n << "\n";
-            cout << "    Time/n^2   = " << per_n2 << "\n";
-            cout << "    Time/nlogn = " << per_nlogn << "\n";
-
             fout << "  Average: " << avg_time << "s\n";
-            fout << "    Time/n     = " << per_n << "\n";
-            fout << "    Time/n^2   = " << per_n2 << "\n";
-            fout << "    Time/nlogn = " << per_nlogn << "\n";
 
             vector<pair<int,int>> userSorted = data;
             sorting_func(userSorted);
@@ -192,7 +181,7 @@ int main(int argc, char* argv[]) {
         {"insertion", insertion_sort},
         {"selection", selection_sort},
         {"bubble",    bubble_sort},
-        {"quick",     quick_sort},
+        //{"quick",     quick_sort},
         {"merge",     merge_sort},
         {"heap",      heap_sort},
         {"intro",     intro_sort},

@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <cmath>
 #include <utility>
-#include <iostream>
+
 const int INSERTION_SORT_THRESHOLD = 16;
 int get_depth_limit(int n) {
     return 2 * static_cast<int>(std::log2(n));

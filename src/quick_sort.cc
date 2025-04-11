@@ -1,9 +1,10 @@
 #include "sorting.h"
 
-int hoare_partition(std::vector<std::pair<int,int>>& arr, int low, int high) {
+// Partition function returning i and j by reference (fixed)
+void partition(std::vector<std::pair<int,int>>& arr, int low, int high, int& i, int& j) {
     auto pivot = arr[low];
-    int i = low - 1;
-    int j = high + 1;
+    i = low - 1;
+    j = high + 1;
 
     while (true) {
         do {
@@ -14,22 +15,24 @@ int hoare_partition(std::vector<std::pair<int,int>>& arr, int low, int high) {
             --j;
         } while (arr[j].first > pivot.first);
 
-        if (i >= j) return j;
+        if (i >= j) break;
 
-        swap(arr[i], arr[j]);
+        std::swap(arr[i], arr[j]);
     }
+    i = j + 1;
 }
 
 
-// Quick Sort main
 void quick_sort_recursive(std::vector<std::pair<int,int>>& arr, int low, int high) {
     if (low < high) {
-        int p = hoare_partition(arr, low, high);
-        quick_sort_recursive(arr, low, p);
-        quick_sort_recursive(arr, p + 1, high);
+        int i, j;
+        partition(arr, low, high, i, j);
+        quick_sort_recursive(arr, low, j);   // Left part
+        quick_sort_recursive(arr, i, high);  // Right part
     }
 }
 
 void quick_sort(std::vector<std::pair<int,int>>& arr) {
-    quick_sort_recursive(arr, 0, arr.size() - 1);
+    if (!arr.empty())
+        quick_sort_recursive(arr, 0, arr.size() - 1);
 }

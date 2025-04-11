@@ -1,0 +1,17 @@
+
+[tournament Sort Performance Test]
+
+[Sorted Input]
+n = 1000
+  Average: 0.0003158s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0194502s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 1.63769s
+    Sorted Correctly? Yes
+
+n = 1000000

@@ -11,7 +11,7 @@ void insertion_sort(std::vector<std::pair<int,int>>& arr);
 void selection_sort(std::vector<std::pair<int,int>>& arr);
 void bubble_sort(std::vector<std::pair<int,int>>& arr);
 void merge_sort(std::vector<std::pair<int,int>>& arr);
-void quick_sort(std::vector<std::pair<int,int>>& arr);
+//void quick_sort(std::vector<std::pair<int,int>>& arr);
 void heap_sort(std::vector<std::pair<int,int>>& arr);
 
 

@@ -1,0 +1,30 @@
+
+[quick Sort Performance Test]
+
+[Sorted Input]
+n = 1000
+  Average: 0.0005203s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0244112s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 2.15227s
+    Sorted Correctly? Yes
+
+n = 1000000
+  Average: 252.652s
+    Sorted Correctly? Yes
+
+[Reversed Input]
+n = 1000
+  Average: 0.0007996s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0220669s
+    Sorted Correctly? Yes
+
+n = 100000

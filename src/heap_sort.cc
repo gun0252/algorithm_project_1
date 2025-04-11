@@ -37,4 +37,3 @@ void heap_sort_interval(std::vector<std::pair<int,int>>& arr, int left, int righ
 void heap_sort(std::vector<std::pair<int,int>>& arr) {
     heap_sort_interval(arr, 0, arr.size() - 1);
 }
-

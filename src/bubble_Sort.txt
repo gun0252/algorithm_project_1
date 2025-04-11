@@ -1,0 +1,92 @@
+
+[bubble Sort Performance Test]
+
+[Sorted Input]
+n = 1000
+  Average: 1.1e-06s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 8.2e-06s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 9.85e-05s
+    Sorted Correctly? Yes
+
+n = 1000000
+  Average: 0.0012209s
+    Sorted Correctly? Yes
+
+[Reversed Input]
+n = 1000
+  Average: 0.0029818s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.288635s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 27.9758s
+    Sorted Correctly? Yes
+
+n = 1000000
+  Average: 1073.05s
+    Sorted Correctly? Yes
+
+[Random Input]
+n = 1000
+  Average: 0.000724s
+    Sorted Correctly? Yes
+    Stable? Yes
+
+n = 10000
+  Average: 0.0676057s
+    Sorted Correctly? Yes
+    Stable? Yes
+
+n = 100000
+  Average: 12.6568s
+    Sorted Correctly? Yes
+    Stable? Yes
+
+n = 1000000
+  Average: 1499.8s
+    Sorted Correctly? Yes
+    Stable? Yes
+
+[Duplicate-heavy Input]
+n = 1000
+  Average: 0.0004989s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0661717s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 12.2423s
+    Sorted Correctly? Yes
+
+n = 1000000
+  Average: 1451.62s
+    Sorted Correctly? Yes
+
+[Nearly Sorted Input]
+n = 1000
+  Average: 0.0002967s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0241292s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 2.10025s
+    Sorted Correctly? Yes
+
+n = 1000000
+  Average: 267.824s
+    Sorted Correctly? Yes
+

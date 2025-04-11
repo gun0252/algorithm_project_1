@@ -1,0 +1,92 @@
+
+[selection Sort Performance Test]
+
+[Sorted Input]
+n = 1000
+  Average: 0.0005471s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0318289s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 2.51411s
+    Sorted Correctly? Yes
+
+n = 1000000
+  Average: 277.477s
+    Sorted Correctly? Yes
+
+[Reversed Input]
+n = 1000
+  Average: 0.0002913s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0293413s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 2.67248s
+    Sorted Correctly? Yes
+
+n = 1000000
+  Average: 286.788s
+    Sorted Correctly? Yes
+
+[Random Input]
+n = 1000
+  Average: 0.0004931s
+    Sorted Correctly? Yes
+    Stable? No
+
+n = 10000
+  Average: 0.0363824s
+    Sorted Correctly? Yes
+    Stable? No
+
+n = 100000
+  Average: 2.48921s
+    Sorted Correctly? Yes
+    Stable? No
+
+n = 1000000
+  Average: 263.49s
+    Sorted Correctly? Yes
+    Stable? No
+
+[Duplicate-heavy Input]
+n = 1000
+  Average: 0.0003064s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0302745s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 2.48216s
+    Sorted Correctly? Yes
+
+n = 1000000
+  Average: 320.86s
+    Sorted Correctly? Yes
+
+[Nearly Sorted Input]
+n = 1000
+  Average: 0.0006549s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0642325s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 6.6844s
+    Sorted Correctly? Yes
+
+n = 1000000
+  Average: 729.366s
+    Sorted Correctly? Yes
+
