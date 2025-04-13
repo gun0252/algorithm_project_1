@@ -1,0 +1,92 @@
+
+[cocktail_shaker Sort Performance Test]
+
+[Sorted Input]
+n = 1000
+  Average: 6e-07s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 5.29e-06s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 5.814e-05s
+    Sorted Correctly? Yes
+
+n = 1000000
+  Average: 0.00157458s
+    Sorted Correctly? Yes
+
+[Reversed Input]
+n = 1000
+  Average: 0.00101812s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0898473s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 8.96143s
+    Sorted Correctly? Yes
+
+n = 1000000
+  Average: 910.864s
+    Sorted Correctly? Yes
+
+[Random Input]
+n = 1000
+  Average: 0.00056475s
+    Sorted Correctly? Yes
+    Stable? Yes
+
+n = 10000
+  Average: 0.0521825s
+    Sorted Correctly? Yes
+    Stable? Yes
+
+n = 100000
+  Average: 9.11486s
+    Sorted Correctly? Yes
+    Stable? Yes
+
+n = 1000000
+  Average: 965.773s
+    Sorted Correctly? Yes
+    Stable? Yes
+
+[Duplicate-heavy Input]
+n = 1000
+  Average: 0.00043428s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0462467s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 9.21226s
+    Sorted Correctly? Yes
+
+n = 1000000
+  Average: 1656.65s
+    Sorted Correctly? Yes
+
+[Nearly Sorted Input]
+n = 1000
+  Average: 3.206e-05s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.00396108s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 0.290643s
+    Sorted Correctly? Yes
+
+n = 1000000
+  Average: 36.6829s
+    Sorted Correctly? Yes
+

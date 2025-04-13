@@ -46,38 +46,35 @@ int rebalancing(std::vector<std::pair<int,int>>& arr, std::vector<bool>& occ ,in
 
     return size_after_rebalancing;
 }
-
 int binary_search(const std::vector<std::pair<int,int>>& arr, int cur_size, const std::vector<bool>& occ, int target) {
-    std::vector<int> occupied_idx;
-    occupied_idx.reserve(cur_size);
-
-    for (int i = 0; i < cur_size; i++) {
-        if (occ[i]) occupied_idx.push_back(i);
-    }
-
-    int low = 0;
-    int high = (int)occupied_idx.size() - 1;
-
+    int candidate = -1;
+    int low = 0, high = cur_size - 1;
     while (low <= high) {
         int mid = (low + high) / 2;
-        int val = arr[occupied_idx[mid]].first;
-        if (val == target) {
-            return occupied_idx[mid];
+        if (!occ[mid]) {
+            int temp = mid;
+            while (temp <= high && !occ[temp]) temp++;
+            if (temp <= high) {
+                mid = temp;
+            } else {
+                high = mid - 1;
+                continue;
+            }
         }
-        else if (val < target) {
+        if (arr[mid].first >= target) {
+            candidate = mid;
+            high = mid - 1;
+        } else { 
             low = mid + 1;
         }
-        else {
-            high = mid - 1;
+    }
+    if (candidate == -1) {
+        for (int i = cur_size - 1; i >= 0; i--) {
+            if (occ[i]) return i;
         }
+        return -1;
     }
-
-    if (low >= (int)occupied_idx.size()) {
-        return occupied_idx.back(); 
-    } 
-    else {
-        return occupied_idx[low];
-    }
+    return candidate;
 }
 
 int insert_shift_left_or_right(std::vector<std::pair<int,int>>& arr,
@@ -185,14 +182,9 @@ void library_sort(std::vector<std::pair<int,int>>& arr) {
             int val = arr[cur_idx].first;
             int idx_found = binary_search(new_space, cur_size, occ, val);
 
-            if (new_space[idx_found].first > val) {
-            } 
-            else if (new_space[idx_found].first < val) {
+            if (new_space[idx_found].first <= val) {
                 idx_found++;
             } 
-            else {
-                idx_found++;
-            }
 
             if (idx_found < -1) idx_found = -1;
             if (idx_found > cur_size) idx_found = cur_size;

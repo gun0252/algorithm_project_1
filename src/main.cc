@@ -178,10 +178,10 @@ void result(void(*sorting_func)(vector<pair<int,int>>&), const string& func_name
 // ===============
 int main(int argc, char* argv[]) {
     vector<pair<string, void(*)(vector<pair<int,int>>&)> > sorters = {
-        {"insertion", insertion_sort},
-        {"selection", selection_sort},
-        {"bubble",    bubble_sort},
-        //{"quick",     quick_sort},
+        //{"insertion", insertion_sort},
+        //{"selection", selection_sort},
+        //{"bubble",    bubble_sort},
+        {"quick",     quick_sort},
         {"merge",     merge_sort},
         {"heap",      heap_sort},
         {"intro",     intro_sort},
@@ -189,7 +189,8 @@ int main(int argc, char* argv[]) {
         {"tournament",tournament_sort},
         {"cocktail_shaker", cocktail_shaker_sort},
         {"comb",      comb_sort},
-        {"library", library_sort}
+        {"library", library_sort},
+        {"rand", quick_sort_random}
     };
 
     if (argc == 1 || string(argv[1]) == "all") {

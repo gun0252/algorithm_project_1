@@ -7,12 +7,13 @@
 // ===== 정렬 알고리즘 함수 선언 =====
 
 //conventional sorting algorithm
-void insertion_sort(std::vector<std::pair<int,int>>& arr);
-void selection_sort(std::vector<std::pair<int,int>>& arr);
-void bubble_sort(std::vector<std::pair<int,int>>& arr);
+//void insertion_sort(std::vector<std::pair<int,int>>& arr);
+//void selection_sort(std::vector<std::pair<int,int>>& arr);
+//void bubble_sort(std::vector<std::pair<int,int>>& arr);
 void merge_sort(std::vector<std::pair<int,int>>& arr);
-//void quick_sort(std::vector<std::pair<int,int>>& arr);
+void quick_sort(std::vector<std::pair<int,int>>& arr);
 void heap_sort(std::vector<std::pair<int,int>>& arr);
+void quick_sort_random(std::vector<std::pair<int,int>>& arr);
 
 
 //contemporary sorting algorithm
