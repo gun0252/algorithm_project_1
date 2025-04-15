@@ -1,0 +1,4 @@
+[cocktail_shaker Performance Test]
+
+Vector Allocation: 12 KB
+Sort Execution:   12 KB

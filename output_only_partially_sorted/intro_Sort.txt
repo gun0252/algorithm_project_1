@@ -1,0 +1,20 @@
+
+[intro Sort Performance Test]
+
+[Partially Sorted Input]
+n = 1000
+  Average: 6.66e-05s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0004948s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 0.0049423s
+    Sorted Correctly? Yes
+
+n = 1000000
+  Average: 0.0625275s
+    Sorted Correctly? Yes
+

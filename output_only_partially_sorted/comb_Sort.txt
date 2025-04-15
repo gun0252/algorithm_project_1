@@ -1,0 +1,20 @@
+
+[comb Sort Performance Test]
+
+[Partially Sorted Input]
+n = 1000
+  Average: 3.74e-05s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.000571s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 0.0070059s
+    Sorted Correctly? Yes
+
+n = 1000000
+  Average: 0.110301s
+    Sorted Correctly? Yes
+

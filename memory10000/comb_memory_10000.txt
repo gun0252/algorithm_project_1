@@ -1,0 +1,4 @@
+[comb Performance Test]
+
+Vector Allocation: 52 KB
+Sort Execution:   80 KB

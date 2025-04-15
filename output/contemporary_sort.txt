@@ -1,3 +1,0 @@
- Library Sort [1], Tim Sort1
-, Cocktail
-Shaker Sort [6], Comb Sort [2], Tournament Sort [8], and Introsort [7].

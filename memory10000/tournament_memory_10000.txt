@@ -1,0 +1,4 @@
+[tournament Performance Test]
+
+Vector Allocation: 52 KB
+Sort Execution:   3288 KB

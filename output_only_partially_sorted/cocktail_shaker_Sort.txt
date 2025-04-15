@@ -1,0 +1,20 @@
+
+[cocktail_shaker Sort Performance Test]
+
+[Partially Sorted Input]
+n = 1000
+  Average: 0.0004543s
+    Sorted Correctly? Yes
+
+n = 10000
+  Average: 0.0362978s
+    Sorted Correctly? Yes
+
+n = 100000
+  Average: 5.58303s
+    Sorted Correctly? Yes
+
+n = 1000000
+  Average: 651.958s
+    Sorted Correctly? Yes
+

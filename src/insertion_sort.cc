@@ -13,5 +13,5 @@ void insertion_sort_interval(std::vector<std::pair<int,int>>& arr, int left, int
 }
 
 void insertion_sort(std::vector<std::pair<int,int>>& arr) {
-    insertion_sort_interval(arr,0,arr.size());
+    insertion_sort_interval(arr,0,arr.size()-1);
 }

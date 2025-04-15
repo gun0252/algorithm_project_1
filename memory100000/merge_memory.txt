@@ -1,0 +1,4 @@
+[merge Performance Test]
+
+Vector Allocation: 404 KB
+Sort Execution:   1592 KB

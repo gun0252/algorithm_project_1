@@ -1,0 +1,4 @@
+[insertion Performance Test]
+
+Vector Allocation: 404 KB
+Sort Execution:   908 KB

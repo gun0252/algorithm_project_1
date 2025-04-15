@@ -1,0 +1,4 @@
+[heap Performance Test]
+
+Vector Allocation: 52 KB
+Sort Execution:   76 KB

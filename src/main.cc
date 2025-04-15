@@ -66,7 +66,7 @@ double measure_time(const vector<pair<int,int>>& data, int trials,
 // ===============
 void result(void(*sorting_func)(vector<pair<int,int>>&), const string& func_name){
     vector<int> sizes = {1000,10000,100000,1000000};
-    int num_trials = 10;
+    int num_trials = 1;
 
     string filename = func_name;
     replace(filename.begin(), filename.end(), ' ', '_');
@@ -76,7 +76,7 @@ void result(void(*sorting_func)(vector<pair<int,int>>&), const string& func_name
     fout << "\n[" << func_name << " Performance Test]\n\n";
 
     vector<pair<string, function<vector<pair<int,int>>(int)>>> inputs = {
-        {
+        /*{
             "Sorted",
             [](int n){
                 vector<pair<int,int>> v(n);
@@ -101,38 +101,24 @@ void result(void(*sorting_func)(vector<pair<int,int>>&), const string& func_name
                 for(int i = 0; i < n; i++) v[i] = {dist(rng), i};
                 return v;
             }
-        },
+        },*/
         {
-            "Duplicate-heavy",
+            "Partially Sorted",
             [](int n){
                 vector<pair<int,int>> v(n);
                 mt19937 rng(random_device{}());
-                uniform_int_distribution<int> dist(0, 10); // 많은 중복을 유도
-                for (int i = 0; i < n; ++i) {
-                    v[i] = {dist(rng), i};  // 중복 값들, index는 고유
+                uniform_int_distribution<int> dist(0, n - 1);
+                int chunk_size = n / 3; // 앞부분 일부만 정렬
+        
+                for (int i = 0; i < chunk_size; ++i) {
+                    v[i] = {i, i};
+                }
+                for (int i = chunk_size; i < n; ++i) {
+                    v[i] = {dist(rng), i};
                 }
                 return v;
             }
         },
-        {
-            "Nearly Sorted",
-            [](int n){
-                vector<pair<int,int>> v(n);
-                for (int i = 0; i < n; ++i)
-                    v[i] = {i, i}; // 완전 정렬
-        
-                // 일부를 섞어줌 (1~5%만 swap)
-                mt19937 rng(random_device{}());
-                int swaps = max(1, n / 50); // n의 2% 정도
-        
-                for (int i = 0; i < swaps; ++i) {
-                    int a = rng() % n;
-                    int b = rng() % n;
-                    swap(v[a], v[b]);
-                }
-                return v;
-            }
-        }
     };
     
     for(auto &inp : inputs){
@@ -178,9 +164,9 @@ void result(void(*sorting_func)(vector<pair<int,int>>&), const string& func_name
 // ===============
 int main(int argc, char* argv[]) {
     vector<pair<string, void(*)(vector<pair<int,int>>&)> > sorters = {
-        //{"insertion", insertion_sort},
-        //{"selection", selection_sort},
-        //{"bubble",    bubble_sort},
+        {"insertion", insertion_sort},
+        {"selection", selection_sort},
+        {"bubble",    bubble_sort},
         {"quick",     quick_sort},
         {"merge",     merge_sort},
         {"heap",      heap_sort},
